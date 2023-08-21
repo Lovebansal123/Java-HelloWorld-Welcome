@@ -1,0 +1,22 @@
+name: CI/CD using github
+on: push
+jobs:
+    CICD:
+        runs-on: ubuntu-latest
+        steps:
+         - name: installing java
+           uses: actions/setup-java@v3
+           with:
+             java-version: '17'
+             distribution: 'temurin'
+
+         - name: check
+           run: |
+             java -version
+             javac -version
+
+         - name: create class
+           run: javac WelcomeWorld.java
+
+         - name: compile and run
+           run: java WelcomeWorld
