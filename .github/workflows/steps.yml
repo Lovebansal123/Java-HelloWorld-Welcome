@@ -9,11 +9,14 @@ jobs:
            with:
              java-version: '17'
              distribution: 'temurin'
-
+     
          - name: check
            run: |
              java -version
              javac -version
+
+         - name: 4. Clone Project
+           uses: actions/checkout@v3
          - name: open folder
            run: cd Java-HelloWorld-Welcome
          - name: create class
