@@ -17,8 +17,7 @@ jobs:
 
          - name: 4. Clone Project
            uses: actions/checkout@v3
-         - name: open folder
-           run: cd Java-HelloWorld-Welcome
+         
          - name: create class
            run: javac WelcomeWorld.java
 
