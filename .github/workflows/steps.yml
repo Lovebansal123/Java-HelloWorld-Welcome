@@ -14,7 +14,8 @@ jobs:
            run: |
              java -version
              javac -version
-
+         - name: open folder
+           run: cd Java-HelloWorld-Welcome
          - name: create class
            run: javac WelcomeWorld.java
 
